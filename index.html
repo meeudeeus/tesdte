@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nome</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/responsivo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body> 
+
+
+<!--- header --->
+<div id="carregando" class="center"></div>
+<div id="conteudo">
+<div class="header">
+<div class="lgemn"><a href="#" id="lga">Nome do Site</a>
+<button id="mnBtn"><i class='fas fa-bars' id="menuIc" onclick="openNav()"></i></button></div>
+  <div class="txtApr"><h1>Olá!</h1>
+  <p>Para quem curte <a href="#" id="stndda">Standoff</a></p></div>
+</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Produtos</a>
+    <a href="#">Sobre</a>
+    <a href="#"><button id="sndm">Faça Parte</button></a>
+    <a href="#" id="stcpr">2021 © Copyright <b>NomeDoSite</b></a>
+  </div>
+</div>
+<!--- fim header --->
+
+<center class="tudo">
+	<div class="cdsCol">
+		<div class="cdBox">
+			<div class="ttcd"><label>Sobre</label></div>
+			<div class="pcd"><p>O que é standoff, versões e mais.</p></div>
+			<div class="btcd"><a href="#"><button>Saber mais</button></a></div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f1f1" fill-opacity="1" d="M0,160L240,64L480,224L720,64L960,224L1200,160L1440,128L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z"></path></svg>
+		</div>
+		<div class="cdBox">
+			<div class="ttcd"><label>Ajuda</label></div>
+			<div class="pcd"><p>Relatar problemas no jogo, consultar informações de apoio ao jogador.</p></div>
+			<div class="btcd"><a href="#"><button>Saber mais</button></a></div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f1f1" fill-opacity="1" d="M0,160L240,64L480,224L720,64L960,224L1200,160L1440,128L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z"></path></svg>
+		</div>
+	</div>
+</center>
+
+<div class="footer">
+	<div class="fteBtn">
+		<a href="#" id="home" class="ripple"><i class='fas fa-home'></i><br>Home</a>
+		<a href="/defly/explo/index.html#" class="ripple"><i class='fas fa-compass'></i><br>Explorar</a>
+		<a href="/defly/produtos/index.html#" class="ripple"><i class='fas fa-shopping-cart'></i><br>Produtos</a>
+		<a href="#"></a>
+	</div>
+</div>
+</div>
+<!--- pctv --->
+<div class="compt">
+	<div class="txtcmpt"><h1>Ops!</h1><p>Parece que o seu dispositivo não é compativel com a versão atual do site</p></div>
+	<div class="compcol">
+		<div class="pfjaw" style="margin-bottom: 35px;"><label style="color: #fff;background: #00000030;padding:10px;border-radius: 5px;">Você pode</label></div>
+		<div class="dxso"><a href="#">Assistir no YouTube <i class='fab fa-youtube'></i></a></div><br>
+		<div class="dxso"><a href="#">Acompanhar no Instagram <i class='fab fa-instagram'></i></a></div><br>
+	</div>
+	</div>
+</div>
+
+
+<!--- scripts --->
+<script>	
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<script>
+  window.onload = function(){
+    document.getElementById('conteudo').style.display = "block";
+    setTimeout(function() {
+      document.getElementById('carregando').style.display = "none";
+    }, 2000);
+  }
+</script>
+<script>
+function mudarTema() {
+   var element = document.body;
+   element.classList.toggle("mdrTema");
+}
+</script>
+
+</body>
+</html>
